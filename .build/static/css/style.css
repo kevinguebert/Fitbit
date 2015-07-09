@@ -17,6 +17,10 @@ body {
 	color: #777;
 }
 
+p {
+  font-family: "Montserrat",Arial,Helvetica,sans-serif;
+}
+
 #wrapper {
 	padding: 100px 40px;
 	max-width: 500px;
@@ -72,6 +76,7 @@ a {
 }
 
 h1 {
+  font-family:"Montserrat",Arial,Helvetica,sans-serif;
 	font-weight: 400;
 	font-size: 20px;
 	color: #222;
@@ -103,6 +108,39 @@ p {
 
 
 /***** CUSTOM CSSS *****/
+
+.btn-pink {
+  background:none;
+  border-radius:30px !important;
+  border:3px solid #ee3d6e !important;
+  padding-right:20px !important;
+  padding-left:20px !important;
+  color: #ee3d6e !important;
+}
+
+.btn-pink:hover {
+  background:#ee3d6e !important; 
+  color: #fff !important;
+  border:3px solid #ee3d6e !important;
+}
+
+.btn-fitbit {
+  background:none;
+  border-radius:30px !important;
+  border:3px solid #fff !important;
+  padding-right:20px !important;
+  padding-left:20px !important;
+}
+
+.btn-fitbit:focus {
+  color:rgba(255,255,255, 0.8) !important;
+  border:3px solid rgba(255,255,255,0.8) !important;
+}
+
+.btn-fitbit:hover {
+  color:rgba(255,255,255, 0.8) !important;
+  border:3px solid rgba(255,255,255,0.8) !important;
+}
 .cover-container{
 	text-align:center;
 }
@@ -143,8 +181,35 @@ p {
   color:black;
 }
 
+.logo_image {
+  margin-right:15px;
+}
+.main-heading {
+  font-size:7rem;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+}
+.heading {
+  font-size:6rem;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+}
+.lead {
+  font-size: 1.6rem !important;
+}
 .lead-subheading {
   text-transform: uppercase;
+  font-weight:700 !important;
+}
+
+.lead-link {
+  color:#fff;
+  text-transform: uppercase;
+  font-weight:700 !important;
+}
+
+.heading_logo {
+  margin-bottom:20px;
 }
 
 .section_50 {
@@ -342,4 +407,8 @@ p {
 .badge_smile {
   top:9%;
   left:65%;
+}
+
+.slide_content {
+  z-index:99;
 }
