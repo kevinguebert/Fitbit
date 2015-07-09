@@ -107,17 +107,139 @@ p {
 	text-align:center;
 }
 
-.slide_10 {
+.cover-container-slides{
+	position:absolute;
+	width:100%;
+	z-index:2;
+	margin-top:20%;
+	text-align:center;
+}
+
+.section_10 {
   background: url('/static/images/slide_10_background.jpeg') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-.slide_20 {
+.section_20 {
   background: url('/static/images/slide_20_background.jpeg') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.section_40 {
+	background:#fff;
+  color:black;
+}
+
+.section_40 h1 {
+  color:black;
+}
+
+.lead-subheading {
+  text-transform: uppercase;
+}
+
+.section_50 {
+	background:#477287;
+}
+
+.section_60 {
+	background:#18353b;
+}
+
+.section_70 {
+	background:#3497a0;
+}
+
+.section_80 {
+	background:#3bafb0;
+}
+
+.section_90 {
+	background:#97cdcd;
+}
+
+.slide_30_10 {
+  background: url('/static/images/slide_30_10.jpg') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.slide_30_20 {
+  background: url('/static/images/slide_30_20.jpg') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.slide_30_30 {
+  background: url('/static/images/slide_30_30.jpg') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.slide_30_40 {
+  background: url('/static/images/slide_30_40.jpg') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.slide_30_50 {
+  background: url('/static/images/slide_30_50.jpg') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/** WATCHES **/
+.watch_1 {
+  left:-10.5%;
+  top:2.5%;
+  position:absolute;
+}
+
+.watch_2 {
+  top:-2.5%;
+  left:17%;
+  width:140px;
+  position:absolute;
+}
+
+.watch_3 {
+  top:45.5%;
+  left:-1%;
+  position:absolute;
+}
+
+.watch_4 {
+  position:absolute;
+  right:10%;
+  top:5%;
+}
+
+.watch_5 {
+  position:absolute;
+  top:-2.5%;
+  right:-1%;
+}
+
+.watch_6 {
+  position: absolute;
+  right:-5%;
+  top:40.5%;
+}
+
+.scale_1 {
+  position:absolute;
+  left:17.5%;
+  top:67.5%;
+  width:65%;
 }
