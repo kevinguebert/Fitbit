@@ -165,14 +165,14 @@ p {
   }
 
 .section_10 {
-  background: url('static/images/slide_10_background.jpeg') no-repeat center center; 
+  background: url('images/slide_10_background.jpeg') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .section_20 {
-  background: url('static/images/slide_20_background.jpeg') no-repeat center center; 
+  background: url('images/slide_20_background.jpeg') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -275,35 +275,35 @@ p {
 }
 
 .slide_30_10 {
-  background: url('static/images/slide_30_10.jpg') no-repeat center center; 
+  background: url('images/slide_30_10.jpg') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .slide_30_20 {
-  background: url('static/images/slide_30_20.jpg') no-repeat center center; 
+  background: url('images/slide_30_20.jpg') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .slide_30_30 {
-  background: url('static/images/slide_30_30.jpg') no-repeat center center; 
+  background: url('images/slide_30_30.jpg') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .slide_30_40 {
-  background: url('static/images/slide_30_40.jpg') no-repeat center center; 
+  background: url('images/slide_30_40.jpg') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .slide_30_50 {
-  background: url('static/images/slide_30_50.jpg') no-repeat center center; 
+  background: url('images/slide_30_50.jpg') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -388,7 +388,7 @@ p {
 }
 
 .award_self {
-  background: url( 'static/images/white_line.png' ) repeat-y top center transparent;
+  background: url( 'images/white_line.png' ) repeat-y top center transparent;
   height:200px;
   top:12%;
   left:-2%;
@@ -399,37 +399,37 @@ p {
 }
 
 .award_tech_crunch {
-  background: url( 'static/images/white_ling.png' ) repeat-y top center transparent;
+  background: url( 'images/white_ling.png' ) repeat-y top center transparent;
   height:350px;
 }
 
 .award_people {
-   background: url( 'static/images/white_ling.png' ) repeat-y top center transparent;
+   background: url( 'images/white_ling.png' ) repeat-y top center transparent;
    height:200px;
 }
 
 .award_wall_street {
-  background: url( 'static/images/white_line.png' ) repeat-y top center transparent;
+  background: url( 'images/white_line.png' ) repeat-y top center transparent;
   height:100px;
 }
 
 .award_fast_company{
-  background: url( 'static/images/white_ling.png' ) repeat-y top center transparent;
+  background: url( 'images/white_ling.png' ) repeat-y top center transparent;
   height:300px;
 }
 
 .award_today {
- background: url( 'static/images/white_ling.png' ) repeat-y top center transparent;
+ background: url( 'images/white_ling.png' ) repeat-y top center transparent;
  height:150px;
 }
 
 .award_vogue{
- background: url( 'static/images/white_ling.png' ) repeat-y top center transparent;
+ background: url( 'images/white_ling.png' ) repeat-y top center transparent;
  height:275px;
 }
 
 .award_usa_today {
- background: url( 'static/images/white_line.png' ) repeat-y top center transparent;
+ background: url( 'images/white_line.png' ) repeat-y top center transparent;
  height:150px;
 }
 
