@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="/static/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="/static/css/bootstrap.css">
 	<link rel="stylesheet" href="/static/css/jquery.fullPage.css">
+	<link rel="stylesheet" href="/static/css/animate.css">
 
 	
 		<title>Why Fitbit</title>
@@ -36,32 +37,34 @@
 	<div class="section section_20">
 		<div class="cover-container">
   <div class="inner cover">
-    <div class="row">
-      <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 slide_content">
-        <h1 class="cover-heading">Meet fitbit</h1>
-        <p class="lead">Find your fit.</p>
-        <p class="lead">When it comes to reaching your fitness goals, steps are just the beginning. Fitbit tracks every part of your day—including activity, exercise, food, weight and sleep—to help you find your fit, stay motivated, and see how small steps make a big impact..</p>
+    <div class="absolute_slide">
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 slide_content">
+          <h1 class="cover-heading absolute_heading">Meet</h1>
+          <img data-sr="" src="/static/images/fitbit_logo_light.png" id="static_logo" class="first_heading_logo" />
+          <p class="lead slide_20_lead">When it comes to reaching your fitness goals, steps are just the beginning. Fitbit tracks every part of your day—including <span class="fitbit_features">activity</span>, <span class="fitbit_features">exercise</span>, <span class="fitbit_features">food</span>, <span class="fitbit_features">weight</span> and <span class="fitbit_features">sleep</span>—to help you find your fit, stay motivated, and see how small steps make a big impact.</p>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-10 col-xs-offset-1">
-        <div class="row">
-          <div class="col-xs-10 col-xs-offset-2">
-            <div class="row">
-              <div class="col-xs-2">
-                <img src="/static/images/running_icon.png" class="slide_20_icons" />
-              </div>
-              <div class="col-xs-2">
-                <img src="/static/images/weight_lifting_icon.png" class="slide_20_icons" />
-              </div>
-              <div class="col-xs-2">
-                <img src="/static/images/fork_knife_icon.png" class="slide_20_icons" />
-              </div>
-              <div class="col-xs-2">
-                <img src="/static/images/scale_icon.png" class="slide_20_icons" />
-              </div>
-              <div class="col-xs-2">
-                <img src="/static/images/moon_icon.png" class="slide_20_icons" />
+      <div class="row slide_20_action_images">
+        <div class="col-xs-10 col-xs-offset-1">
+          <div class="row">
+            <div class="col-xs-10 col-xs-offset-2">
+              <div class="row">
+                <div class="col-xs-2">
+                  <img data-sr='enter bottom' src="/static/images/running_icon.png" class="slide_20_icons" />
+                </div>
+                <div class="col-xs-2">
+                  <img data-sr='enter bottom, wait 0.15s' src="/static/images/weight_lifting_icon.png" class="slide_20_icons" />
+                </div>
+                <div class="col-xs-2">
+                  <img data-sr='enter bottom, wait 0.25s' src="/static/images/fork_knife_icon.png" class="slide_20_icons" />
+                </div>
+                <div class="col-xs-2">
+                  <img data-sr='enter bottom, wait 0.35s' src="/static/images/scale_icon.png" class="slide_20_icons" />
+                </div>
+                <div class="col-xs-2">
+                  <img data-sr='enter bottom, wait 0.45s' src="/static/images/moon_icon.png" class="slide_20_icons" />
+                </div>
               </div>
             </div>
           </div>
@@ -72,10 +75,16 @@
 </div>
 	</div>
 	<div class="section">
-		<div class="cover-container-slides">
+		<div class="cover-container-slides cover-container">
   <div class="inner cover">
-    <h1 class="cover-heading">Experience fitbit</h1>
-    <img src="/static/images/slide_30_slider_circles.png" />
+    <div class="absolute_slide">
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 slide_content">
+          <h1 class="cover-heading absolute_heading">Experience</h1>
+          <img src="/static/images/slide_30_slider_circles.png" />
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <div class="slide slide_30_10"> </div>
@@ -83,15 +92,16 @@
 <div class="slide slide_30_30"> </div> 
 <div class="slide slide_30_40"> </div> 
 <div class="slide slide_30_50"> </div>
-
+<div id="slideLeave"></div>
 	</div>
 	<div class="section section_40">
-		<div class="cover-container">
+		<div class="cover-container-slides cover-container">
   <div class="inner cover">
     <div class="row">
       <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 slide_content">
-        <h1 class="">Why fitbit</h1>
-        <p class="lead lead-subheading">UNBEATABLE TECHNOLOGY, THE LARGEST FITNESS COMMUNITY & A FAMILY OF PRODUCTS FIT FOR EVERYONE.</p>
+        <h1 class="">Why</h1>
+        <img data-sr="enter top" src="/static/images/fitbit_logo.png" id="static_logo" class="heading_logo" />
+        <p class="lead lead-subheading watches_subheading">UNBEATABLE TECHNOLOGY, THE LARGEST FITNESS COMMUNITY & A FAMILY OF PRODUCTS FIT FOR EVERYONE.</p>
       </div>
     </div>
   </div>
@@ -106,11 +116,15 @@
 
 	</div>
 	<div class="section section_50">
-		<div class="cover-container">
+		
+<div class="cover-container">
   <div class="inner cover">
-    <img src="/static/images/far_left_shoe.png" class="shoes shoe_left" />
-    <img src="/static/images/middle_shoe.png" class="shoes shoe_middle"  />
-    <img src="/static/images/far_right_shoe.png" class="shoes shoe_right"  />
+    <img data-sr='enter top, move 300px, over 1.3s' src="/static/images/far_left_shoe.png" class="shoes shoe_left" />
+    <img data-sr='enter top, move 300px, over 1.3s, wait 0.25s' src="/static/images/middle_shoe.png" class="shoes shoe_middle"  />
+    <img data-sr='enter top, move 300px, over 1.3s, wait 0.5s' src="/static/images/far_right_shoe.png" class="shoes shoe_right"  />
+    <img data-sr='enter bottom, move 100px, over 1.3s' src="/static/images/shoe_shadow.png" class="shoes shoe_left" />
+    <img data-sr='enter bottom, move 100px, over 1.3s, wait 0.25s' src="/static/images/shoe_shadow.png" class="shoes shoe_middle"  />
+    <img data-sr='enter bottom, move 100px, over 1.3s, wait 0.5s' src="/static/images/shoe_shadow.png" class="shoes shoe_right"  />
     <div class="row">
       <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 slide_content">
         <h1 class="">Only Fitbit gives you the freedom to get fit your way.</h1>
@@ -125,7 +139,7 @@
 	<div class="section section_60">
 		<div class="cover-container">
   <div class="inner cover">
-    <img src="/static/images/all_product_items.png" />
+    <img src="/static/images/all_product_items.png" class="all_product_items" />
     <div class="row">
       <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 slide_content">
         <h1 class="">We have a history of inventing the future.</h1>
@@ -140,11 +154,11 @@
 	<div class="section section_70">
 		<div class="cover-container">
   <div class="inner cover">
-    <img src="/static/images/phone_left.png" class="phones shoe_left" />
-    <img src="/static/images/phone_middle.png" class="phones shoe_middle"  />
-    <img src="/static/images/phone_right.png" class="phones shoe_right"  />
+    <img data-sr="enter left, move 300px, roll 135deg, over 0.75s" src="/static/images/phone_left.png" class="phones shoe_left" />
+    <img data-sr="enter top, move 300px, over 0.75s" src="/static/images/phone_middle.png" class="phones shoe_middle"  />
+    <img data-sr="enter right, move 300px, roll 270deg, over 0.75s" src="/static/images/phone_right.png" class="phones shoe_right"  />
     <div class="row">
-      <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 slide_content">
+      <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 slide_content">
         <h1 class="">Fitness is more fun with friends and family. Lucky for you, all yours are on Fitbit.</h1>
         <p class="lead">Fitbit is accessible on 120+ phones, including Android, iOS and Windows—more than any other tracker. Now you can connect, share and compete when you want, with anyone you want.</p>
         <a href="#" class="lead-link">Explore the App <img src="/static/images/link_arrow.png" /></a>
@@ -156,52 +170,56 @@
 	</div>
 	<div class="section section_80">
 		<div class="accolades">
-  <div class="awards award_self" id="self">
+  <div class="awards awards_self hidden" id="self">
+    <div class="award_self">
+    </div>
     <div class="award_banner">
-      <img src="/static/images/self.png" />
+      <img id="" class="award_banner_self" src="/static/images/self.png" />
     </div>
   </div>
-  <div class="awards award_tech_crunch" id="tech_crunch">
+  <div class="awards awards_tech_crunch hidden" id="tech_crunch">
+    <div class="award_tech_crunch">
+    </div>
     <div class="award_banner">
-      <img src="/static/images/tech_crunch.png" />
+      <img class="" id="" src="/static/images/tech_crunch.png" />
     </div>
   </div>
-  <div class="awards award_people" id="people">
+  <div class="awards award_people">
     <div class="award_banner">
-      <img src="/static/images/people.png" />
+      <img class="hidden" id="people" src="/static/images/people.png" />
     </div>
   </div>
-  <div class="awards award_wall_street" id="wall_street">
+  <div class="awards award_wall_street">
     <div class="award_banner">
-      <img src="/static/images/wall-street_journal.png" />
+      <img class="hidden" id="wall_street" src="/static/images/wall-street_journal.png" />
     </div>
   </div>
-  <div class="awards award_fast_company" id="fast_company">
+  <div class="awards award_fast_company">
     <div class="award_banner">
-      <img src="/static/images/fast_company.png" />
+      <img class="hidden" id="fast_company" src="/static/images/fast_company.png" />
     </div>
   </div>
-  <div class="awards award_today" id="today">
+  <div class="awards award_today">
     <div class="award_banner">
-      <img src="/static/images/today.png" />
+      <img class="hidden" id="today" src="/static/images/today.png" />
     </div>
   </div>
-  <div class="awards award_vogue" id="vogue">
+  <div class="awards award_vogue">
     <div class="award_banner">
-      <img src="/static/images/vogue.png" />
+      <img class="hidden" id="vogue" src="/static/images/vogue.png" />
     </div>
   </div>
-  <div class="awards award_usa_today" id="usa_today">
+  <div class="awards award_usa_today">
     <div class="award_banner">
-      <img src="/static/images/usa_today.png" />
+      <img class="hidden" id="usa_today" src="/static/images/usa_today.png" />
     </div>
   </div>
 </div>
 <div class="cover-container">
   <div class="inner cover">
-    <div class="row">
-      <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 slide_content">
-        <h1 class="">Learn about our award-winners.
+    <div class="row accolades_row">
+      <div class="col-xs-8 col-xs-offset-2 col-sm-10 col-sm-offset-1 slide_content">
+        <h1 class="">Learn about our award-winners.<br>
           Or, just wear them.</h1>
         <p class="lead">For seven years we’ve dedicated ourselves to designing devices you’d want to wear and an app you’d love to use. It’s the only thing we do. And we’re really good at it. Don’t take our word for it. Take theirs.</p>
         <a href="#" class="lead-link">Browse the Buzz <img src="/static/images/link_arrow.png" /></a>
@@ -220,7 +238,7 @@
 <div class="cover-container">
   <div class="inner cover">
     <div class="row">
-      <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 slide_content">
+      <div class="col-xs-8 col-xs-offset-2 col-sm-12 col-sm-offset-0 slide_content">
         <h1 class="">Achievement badges should be shared. Private data shouldn’t.</h1>
         <p class="lead">Your fitness journey is your own. You should be able to share what you want, when you want. That’s why we don’t sell your private data—and why we never budge on privacy.</p>
         <a href="#" class="lead-link">Read our Policy <img src="/static/images/link_arrow.png" /></a>
@@ -234,7 +252,7 @@
 		<div class="cover-container">
   <div class="inner cover">
     <div class="row">
-      <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 slide_content">
+      <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 slide_content">
         <h1 class="heading">Buy</h1>
         <img src="/static/images/fitbit_logo.png" class="heading_logo" />
         <p class="lead lead-subheading">No matter what you came here looking for,<br>
@@ -259,11 +277,11 @@
 
 	
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		<script src="/static/js/main.js"></script>
 		<script src="/static/js/retina.js"></script>
 		<script src="/static/js/bootstrap.js"></script>
 		<script src="/static/js/jquery.fullPage.js"></script>
 		<script src="/static/js/scrollReveal.js"></script>
+		<script src="/static/js/main.js"></script>
 	
 </body>
 </html>

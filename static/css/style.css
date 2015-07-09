@@ -149,9 +149,20 @@ p {
 	position:absolute;
 	width:100%;
 	z-index:2;
-	margin-top:20%;
+	top:12.5%;
 	text-align:center;
 }
+
+.hidden_transition {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.25s, opacity 0.25s linear;
+}
+.visible_transition {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s 1.5s, opacity 1.5s linear;
+  }
 
 .section_10 {
   background: url('/static/images/slide_10_background.jpeg') no-repeat center center; 
@@ -166,6 +177,10 @@ p {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.slide_20_lead {
+  font-size:2.8rem !important;
 }
 
 .section_40, .section_100 {
@@ -195,7 +210,7 @@ p {
   font-weight: 300;
 }
 .lead {
-  font-size: 1.6rem !important;
+  font-size: 1.6rem;
 }
 .lead-subheading {
   text-transform: uppercase;
@@ -208,8 +223,35 @@ p {
   font-weight:700 !important;
 }
 
+.watches_subheading {
+  margin-top:100px;
+}
+
 .heading_logo {
   margin-bottom:20px;
+}
+
+.first_heading_logo { 
+  display:none;
+  margin-bottom:20px;
+}
+
+.static_heading_logo {
+  display:block;
+  position:fixed;
+  top:25%;
+  left:50%;
+  margin-top:-31px;
+  margin-left:-115px;
+  z-index:1;
+}
+
+.fitbit_features {
+  color: #4ac1c0;
+}
+
+.slide_20_action_images {
+  padding-top:80px;
 }
 
 .section_50 {
@@ -340,13 +382,26 @@ p {
 .awards img {
   width:110%;
 }
+.awards {
+  top:0;
+}
 .award_self {
+  background: url( '/static/images/white_line.png' ) repeat-y top center transparent;
+  height:200px;
   top:12%;
   left:-2%;
 }
+
+.award_banner_self {
+  margin-left:-6px;
+}
 .award_tech_crunch {
-  top:40%;
-  left:5%;
+  background: url( '/static/images/white_ling.png' ) repeat-y top center transparent;
+  height:350px;
+}
+
+.awards_tech_crunch { 
+  left:8%;
 }
 
 .award_people {
@@ -409,6 +464,44 @@ p {
   left:65%;
 }
 
+.absolute_slide {
+  position:absolute;
+  top:12.5%;
+  width:100%;
+}
+.absolute_heading {
+  margin-bottom:100px;
+}
 .slide_content {
   z-index:99;
+}
+
+.all_product_items {
+  max-width:1027px;
+  width:100%;
+}
+#tech_crunch {
+  -webkit-animation-delay: 0.15s;
+}
+#people{
+  -webkit-animation-delay: 0.25s;
+}
+#wall_street{
+  -webkit-animation-delay: 0.35s;
+}
+#fast_company{
+  -webkit-animation-delay: 0.45s;
+}
+#today{
+  -webkit-animation-delay: 0.55s;
+}
+#vogue{
+  -webkit-animation-delay: 0.65s;
+}
+#usa_today{
+  -webkit-animation-delay: 0.75s;
+}
+
+.accolades_row {
+  margin-top:40%;
 }
