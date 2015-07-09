@@ -130,12 +130,16 @@ p {
   background-size: cover;
 }
 
-.section_40 {
+.section_40, .section_100 {
 	background:#fff;
   color:black;
 }
 
 .section_40 h1 {
+  color:black;
+}
+
+.section_100 h1 {
   color:black;
 }
 
@@ -242,4 +246,100 @@ p {
   left:17.5%;
   top:67.5%;
   width:65%;
+}
+
+.shoes {
+  width:30%;
+}
+
+.shoe_left {
+  left:-5%;
+}
+.shoe_middle {
+  left:36.5%%;
+}
+.shoe_right {
+  right: -5%;
+}
+
+.phones {
+  max-height:450px;
+}
+
+/** Awards **/
+
+.awards {
+  position:absolute;
+}
+
+.awards img {
+  width:110%;
+}
+.award_self {
+  top:12%;
+  left:-2%;
+}
+.award_tech_crunch {
+  top:40%;
+  left:5%;
+}
+
+.award_people {
+  top:22%;
+  left:20%;
+}
+
+.award_wall_street {
+  top:5%;
+  left:35%;
+}
+
+.award_fast_company {
+  top:30%;
+  left:46%;
+}
+
+.award_today {
+  top:12%;
+  left:65%;
+}
+
+.award_vogue {
+  top:39%;
+  left:75%;
+}
+
+.award_usa_today {
+  top:20%;
+  left:90%;
+}
+
+/** Badges **/
+.badges {
+  position:absolute;
+}
+
+.badge_bridge {
+  bottom:-5%;
+  left:-5%;
+}
+
+.badge_shoe {
+  top:10%;
+  left:25%;
+}
+
+.badge_helicopter {
+  left:60%;
+  bottom:0%;
+}
+
+.badge_heart {
+  right:-3%;
+  top:23%;
+}
+
+.badge_smile {
+  top:9%;
+  left:65%;
 }
