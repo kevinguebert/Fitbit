@@ -382,9 +382,11 @@ p {
 .awards img {
   width:110%;
 }
+
 .awards {
   top:0;
 }
+
 .award_self {
   background: url( '/static/images/white_line.png' ) repeat-y top center transparent;
   height:200px;
@@ -395,42 +397,67 @@ p {
 .award_banner_self {
   margin-left:-6px;
 }
+
 .award_tech_crunch {
   background: url( '/static/images/white_ling.png' ) repeat-y top center transparent;
   height:350px;
+}
+
+.award_people {
+   background: url( '/static/images/white_ling.png' ) repeat-y top center transparent;
+   height:200px;
+}
+
+.award_wall_street {
+  background: url( '/static/images/white_line.png' ) repeat-y top center transparent;
+  height:100px;
+}
+
+.award_fast_company{
+  background: url( '/static/images/white_ling.png' ) repeat-y top center transparent;
+  height:300px;
+}
+
+.award_today {
+ background: url( '/static/images/white_ling.png' ) repeat-y top center transparent;
+ height:150px;
+}
+
+.award_vogue{
+ background: url( '/static/images/white_ling.png' ) repeat-y top center transparent;
+ height:275px;
+}
+
+.award_usa_today {
+ background: url( '/static/images/white_line.png' ) repeat-y top center transparent;
+ height:150px;
 }
 
 .awards_tech_crunch { 
   left:8%;
 }
 
-.award_people {
-  top:22%;
+.awards_people {
   left:20%;
 }
 
-.award_wall_street {
-  top:5%;
-  left:35%;
+.awards_wall_street {
+  left:32.5%;
 }
 
-.award_fast_company {
-  top:30%;
+.awards_fast_company {
   left:46%;
 }
 
-.award_today {
-  top:12%;
+.awards_today {
   left:65%;
 }
 
-.award_vogue {
-  top:39%;
+.awards_vogue {
   left:75%;
 }
 
-.award_usa_today {
-  top:20%;
+.awards_usa_today {
   left:90%;
 }
 
