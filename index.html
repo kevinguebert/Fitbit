@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="static/css/jquery.fullPage.css">
 	<link rel="stylesheet" href="static/css/animate.css">
 
+	<style> [data-sr] { visibility: hidden; } </style>
 	
 		<title>Why Fitbit</title>
 	
@@ -23,24 +24,24 @@
 	
 
 <div id="fullpage" class="fullpage">
-	<video autoplay loop muted id="fitbit">
-	  <source src="static/images/fitbit4.mp4" type="video/mp4">
+	<video autoplay loop muted id="fitbit" class="hidden">
+	  <source src="static/images/fitbit4.mp4" data-src="static/images/slide_10_background.jpeg" id='fitbit-video' class="hidden" type="video/mp4">
 	</video>
-	<div class="section section_10">
+	<div class="section section_10 section_10_background_image" id='section_10'>
 		<div class='section_10_background_image'></div>
 <div class="cover-container">
   <div class="inner cover">
     <img src="static/images/fitbit_logo_image.png" id="logo_image_small" class="logo_image" />
-    <img src="static/images/fitbit_logo_light.png" id="logo_image_text" class="heading_logo" />
-    <p class="cover-heading main-heading">Find your fit.</p>
-    <button type="button" class="btn manifesto btn-fitbit lead-subheading">Read our manifesto</button>
+    <img src="static/images/fitbit_logo_light.png" id="logo_image_text" class="heading_logo first_logo" />
+    <p class="cover-heading main-heading">find your fit.</p>
+    <!-- <button type="button" class="btn manifesto btn-fitbit lead-subheading">Read our manifesto</button> -->
   </div>
 </div>
 
+		<img class="animated infinite bounce down_arrow" src="static/images/down_arrow.png" />
 	</div>
-	<div class="section section_15">
-		<div class='section_15_background_image'></div>
-<div class="section_15_background_overlay"></div>
+	<div class="section section_15_background_image" id="section_15">
+		<div class="section_15_background_overlay"></div>
 <div class="cover-container">
   <div class="inner cover">
     <div class="row">
@@ -61,6 +62,7 @@
   </div>
 </div>
 
+		<img class="animated infinite bounce down_arrow" src="static/images/down_arrow.png" />
 	</div>
 	<div class="section section_20">
 		
@@ -99,6 +101,7 @@
     </div>
   </div>
 </div>
+		<img class="animated infinite bounce down_arrow" src="static/images/down_arrow.png" />
 	</div>
 	<div class="section">
 		<div class="cover-container-slides cover-container slide_30_0">
@@ -127,7 +130,7 @@
   <div class="carousel-inner" role="listbox">
     <div class="item active slide_30_10">
       <span class="small_circle slide_icon_run_small" data-target="#carousel-main-small-generic" data-slide-to="0" class="active">
-          <img src='static/imagesstatic_circle.png' class="static_circle" />
+          <img src='static/images/static_circle.png' class="static_circle" />
       <p class="carousel_title">Track</p>
       <p class="carousel_text">Track activity, exercise, food, weight, sleep and more, for real-time information about your day and night.<p>
       </span>
@@ -177,7 +180,7 @@
   <!-- Indicators -->
   <div class='row'>
     <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-      <ol class="carousel-indicators big-carousel-indicators slide_icons">
+      <ol class="carousel-indicators main-carousel-indicators big-carousel-indicators slide_icons">
         <div class="slide_icon_run active" data-target="#carousel-main-example-generic" data-slide-to="0"> 
           <p class="carousel_title">Track</p>
           <p class="carousel_text">Track activity, exercise, food, weight, sleep and more, for real-time information about your day and night.<p>
@@ -228,6 +231,7 @@
   </a>
 </div>
 
+		<img class="animated infinite bounce down_arrow" src="static/images/down_arrow.png" />
 	</div>
 	<div class="section section_40">
 		<div class="cover-container-slides cover-container slide_40_0">
@@ -249,6 +253,7 @@
 <img data-sr="enter bottom, move 125px" src="static/images/watch_6.png" class="watches watch_6" />
 <img src="static/images/large_scale.png" class="watches scale_1" />
 
+		<img class="animated infinite bounce down_arrow" src="static/images/down_arrow.png" />
 	</div>
 	<div class="section section_50" id='section_50'>
 		<div class="cover-container">
@@ -271,49 +276,55 @@
   </div>
 </div>
 
+		<img class="animated infinite bounce down_arrow" src="static/images/down_arrow.png" />
 	</div>
 	<div class="section section_60" id='section_60'>
 		<div class="cover-container">
   <div class="inner cover">
-    <div class="row">
-      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 slide_content">
-    <div class="row">
-      <div class="col-sm-1">
-        <img data-sr="enter right, move 200px, over 0.25s" src="static/images/product_one.png" class="product_one" />
-      </div>
-      <div class="col-sm-2" style="margin-left:-30px">
-        <div class="row">
-          <div class="col-sm-6">
-            <img data-sr="enter right, move 200px, over 0.25s, wait 0.1s" src="static/images/product_two.png" class="product_two" />
-          </div>
-          <div class="col-sm-6">
-            <img data-sr="enter right, move 200px, over 0.25s, wait 0.15s" src="static/images/product_three.png" class="product_three" />
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="row">
-          <div class="col-sm-6">
-            <img data-sr="enter right, move 200px, over 0.25s, wait 0.2s" src="static/images/product_four.png" class="product_four" />
-          </div>
-          <div class="col-sm-6">
-            <img data-sr="enter right, move 200px, over 0.25s, wait 0.25s" src="static/images/product_five.png" class="product_five" />
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-5">
-        <div class="row">
-          <div class="col-sm-6">
-            <img data-sr="enter right, move 200px, over 0.25s, wait 0.3s" src="static/images/product_sixx.png" class="product_six" />
-          </div>
-          <div class="col-sm-6">
-            <img data-sr="enter right, move 200px, over 0.25s, wait 0.35s" src="static/images/product_seven.png" class="product_seven" />
+    <div class="hidden-xs">
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 slide_content">
+          <div class="row">
+            <div class="col-sm-1">
+              <img data-sr="enter right, move 200px, over 0.25s" src="static/images/product_one.png" class="product_one" />
+            </div>
+            <div class="col-sm-2" style="margin-left:-30px">
+              <div class="row">
+                <div class="col-sm-6">
+                  <img data-sr="enter right, move 200px, over 0.25s, wait 0.1s" src="static/images/product_two.png" class="product_two" />
+                </div>
+                <div class="col-sm-6">
+                  <img data-sr="enter right, move 200px, over 0.25s, wait 0.15s" src="static/images/product_three.png" class="product_three" />
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="row">
+                <div class="col-sm-6">
+                  <img data-sr="enter right, move 200px, over 0.25s, wait 0.2s" src="static/images/product_four.png" class="product_four" />
+                </div>
+                <div class="col-sm-6">
+                  <img data-sr="enter right, move 200px, over 0.25s, wait 0.25s" src="static/images/product_five.png" class="product_five" />
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-5">
+              <div class="row">
+                <div class="col-sm-6">
+                  <img data-sr="enter right, move 200px, over 0.25s, wait 0.3s" src="static/images/product_sixx.png" class="product_six" />
+                </div>
+                <div class="col-sm-6">
+                  <img data-sr="enter right, move 200px, over 0.25s, wait 0.35s" src="static/images/product_seven.png" class="product_seven" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
+    <div class="hidden-sm hidden-md hidden-lg">
+      <img src="static/images/all_product_items.png" class="all_product_items" />
+    </div>
     <div class="row">
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 slide_content">
         <h1 class="">We have a history of inventing the future.</h1>
@@ -324,22 +335,24 @@
   </div>
 </div>
 
+		<img class="animated infinite bounce down_arrow" src="static/images/down_arrow.png" />
 	</div>
 	<div class="section section_70" id='section_70'>
 		<div class="cover-container">
   <div class="inner cover">
-      <div data-sr="wait 4s" class="cheer">
-        <div class="cheer-box">
-          <img src="static/images/cheer.png" />
-          <p>Nick cheered you!</p>
+    <div class="hidden-xs">
+      <div data-sr="wait 4s" class="cheer hidden-xs">
+          <div class="cheer-box">
+            <img src="static/images/cheer.png" />
+            <p>Nick cheered you!</p>
+          </div>
         </div>
-
+      <img data-sr="enter left, move 300px, roll 135deg, over 0.75s" src="static/images/phone_left.png" class="phones shoe_left" />
+      <div class="phones shoe_middle">
+        <img data-sr="enter top, move 300px, over 0.75s" src="static/images/phone_middle.png" class=""  />
       </div>
-    <img data-sr="enter left, move 300px, roll 135deg, over 0.75s" src="static/images/phone_left.png" class="phones shoe_left" />
-    <div class="phones shoe_middle">
-      <img data-sr="enter top, move 300px, over 0.75s" src="static/images/phone_middle.png" class=""  />
+      <img data-sr="enter right, move 300px, roll 270deg, over 0.75s" src="static/images/phone_right.png" class="phones shoe_right"  />
     </div>
-    <img data-sr="enter right, move 300px, roll 270deg, over 0.75s" src="static/images/phone_right.png" class="phones shoe_right"  />
   
    <div class="row hidden-sm hidden-md hidden-lg">
       <div class="col-xs-4">
@@ -362,6 +375,7 @@
   </div>
 </div>
 
+		<img class="animated infinite bounce down_arrow" src="static/images/down_arrow.png" />
 	</div>
 	<div class="section section_80" id='section_80'>
 		<div class="accolades hidden-xs">
@@ -422,7 +436,7 @@
     </div>
   </div>
 </div>
-<div class="accolades">
+<div class="accolades hidden-sm hidden-md hidden-lg">
   <div class="awards awards_self" id="self">
     <div class="award_self">
     </div>
@@ -493,6 +507,7 @@
   </div>
 </div>
 
+		<img class="animated infinite bounce down_arrow" src="static/images/down_arrow.png" />
 	</div>
 	<div class="section section_90" id='section_90'>
 		<img data-sr="enter bottom, move 100px" src="static/images/bridge_badge.png" class="badges badge_bridge" />
@@ -512,6 +527,7 @@
   </div>
 </div>
 
+		<img class="animated infinite bounce down_arrow" src="static/images/down_arrow.png" />
 	</div>
 	<div class="section section_100">
 		<div class="cover-container slide_100_0">
@@ -519,7 +535,7 @@
     <div class="row">
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 slide_content">
         <h1 class="heading">Buy</h1>
-        <img src="static/images/fitbit_logo.png" class="heading_logo" />
+        <img src="static/images/fitbit_logo.png" class="heading_logo final_logo" />
         <p class="lead lead-subheading">No matter what you came here looking for,<br>
     fitbit goes with everything.</p>
       </div>
@@ -533,6 +549,7 @@
   </div>
 </div>
 
+		<img class="animated infinite bounce down_arrow" src="static/images/down_arrow.png" />
 	</div>
 	<div id="section_55" class="section section_55">
 		<div id="carousel-small-generic" class="carousel slide" data-ride="carousel">
@@ -572,45 +589,50 @@
     <div class="item carousel_section_60">
       <div class="cover-container">
   <div class="inner cover">
-    <div class="row">
-      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 slide_content">
-    <div class="row">
-      <div class="col-sm-1">
-        <img data-sr="enter right, move 200px, over 0.25s" src="static/images/product_one.png" class="product_one" />
-      </div>
-      <div class="col-sm-2" style="margin-left:-30px">
-        <div class="row">
-          <div class="col-sm-6">
-            <img data-sr="enter right, move 200px, over 0.25s, wait 0.1s" src="static/images/product_two.png" class="product_two" />
-          </div>
-          <div class="col-sm-6">
-            <img data-sr="enter right, move 200px, over 0.25s, wait 0.15s" src="static/images/product_three.png" class="product_three" />
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="row">
-          <div class="col-sm-6">
-            <img data-sr="enter right, move 200px, over 0.25s, wait 0.2s" src="static/images/product_four.png" class="product_four" />
-          </div>
-          <div class="col-sm-6">
-            <img data-sr="enter right, move 200px, over 0.25s, wait 0.25s" src="static/images/product_five.png" class="product_five" />
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-5">
-        <div class="row">
-          <div class="col-sm-6">
-            <img data-sr="enter right, move 200px, over 0.25s, wait 0.3s" src="static/images/product_sixx.png" class="product_six" />
-          </div>
-          <div class="col-sm-6">
-            <img data-sr="enter right, move 200px, over 0.25s, wait 0.35s" src="static/images/product_seven.png" class="product_seven" />
+    <div class="hidden-xs">
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 slide_content">
+          <div class="row">
+            <div class="col-sm-1">
+              <img data-sr="enter right, move 200px, over 0.25s" src="static/images/product_one.png" class="product_one" />
+            </div>
+            <div class="col-sm-2" style="margin-left:-30px">
+              <div class="row">
+                <div class="col-sm-6">
+                  <img data-sr="enter right, move 200px, over 0.25s, wait 0.1s" src="static/images/product_two.png" class="product_two" />
+                </div>
+                <div class="col-sm-6">
+                  <img data-sr="enter right, move 200px, over 0.25s, wait 0.15s" src="static/images/product_three.png" class="product_three" />
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="row">
+                <div class="col-sm-6">
+                  <img data-sr="enter right, move 200px, over 0.25s, wait 0.2s" src="static/images/product_four.png" class="product_four" />
+                </div>
+                <div class="col-sm-6">
+                  <img data-sr="enter right, move 200px, over 0.25s, wait 0.25s" src="static/images/product_five.png" class="product_five" />
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-5">
+              <div class="row">
+                <div class="col-sm-6">
+                  <img data-sr="enter right, move 200px, over 0.25s, wait 0.3s" src="static/images/product_sixx.png" class="product_six" />
+                </div>
+                <div class="col-sm-6">
+                  <img data-sr="enter right, move 200px, over 0.25s, wait 0.35s" src="static/images/product_seven.png" class="product_seven" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
+    <div class="hidden-sm hidden-md hidden-lg">
+      <img src="static/images/all_product_items.png" class="all_product_items" />
+    </div>
     <div class="row">
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 slide_content">
         <h1 class="">We have a history of inventing the future.</h1>
@@ -625,18 +647,19 @@
     <div class="item carousel_section_70">
       <div class="cover-container">
   <div class="inner cover">
-      <div data-sr="wait 4s" class="cheer">
-        <div class="cheer-box">
-          <img src="static/images/cheer.png" />
-          <p>Nick cheered you!</p>
+    <div class="hidden-xs">
+      <div data-sr="wait 4s" class="cheer hidden-xs">
+          <div class="cheer-box">
+            <img src="static/images/cheer.png" />
+            <p>Nick cheered you!</p>
+          </div>
         </div>
-
+      <img data-sr="enter left, move 300px, roll 135deg, over 0.75s" src="static/images/phone_left.png" class="phones shoe_left" />
+      <div class="phones shoe_middle">
+        <img data-sr="enter top, move 300px, over 0.75s" src="static/images/phone_middle.png" class=""  />
       </div>
-    <img data-sr="enter left, move 300px, roll 135deg, over 0.75s" src="static/images/phone_left.png" class="phones shoe_left" />
-    <div class="phones shoe_middle">
-      <img data-sr="enter top, move 300px, over 0.75s" src="static/images/phone_middle.png" class=""  />
+      <img data-sr="enter right, move 300px, roll 270deg, over 0.75s" src="static/images/phone_right.png" class="phones shoe_right"  />
     </div>
-    <img data-sr="enter right, move 300px, roll 270deg, over 0.75s" src="static/images/phone_right.png" class="phones shoe_right"  />
   
    <div class="row hidden-sm hidden-md hidden-lg">
       <div class="col-xs-4">
@@ -719,7 +742,7 @@
     </div>
   </div>
 </div>
-<div class="accolades">
+<div class="accolades hidden-sm hidden-md hidden-lg">
   <div class="awards awards_self" id="self">
     <div class="award_self">
     </div>
@@ -822,6 +845,7 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+		<img class="animated infinite bounce down_arrow" src="static/images/down_arrow.png" />
 	</div>
 </div>
 
@@ -835,6 +859,7 @@
 		<script src="static/js/bootstrap.js"></script>
 		<script src="static/js/jquery.fullPage.js"></script>
 		<script src="static/js/scrollReveal.js"></script>
+		<script src="static/js/jquery.unveil.js"></script>
 		<script src="static/js/main.js"></script>
 	
 </body>
