@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  $("#fitbit-video").unveil();
   $('.carousel').carousel({
     interval: 3000
   })
@@ -95,7 +94,7 @@ $(document).ready(function() {
   var videoElement = video.get(0);
 
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    console.log('yaasdf');
+    $('#fitbit_vid').remove();
   }
   if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     videoElement.oncanplay = function() {
