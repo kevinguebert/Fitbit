@@ -101,9 +101,23 @@ $(document).ready(function() {
    afterLoad: function(anchorLink, index){
        var loadedSection = $(this);
         //using index
+       // if( index ==1 || index ==2 )
+       // {
+       //  $('#logo_image_text').addClass('static_main_heading_logo_text');
+       //  $('#logo_image_small').addClass('static_main_heading_logo');
+       //  if( index == 2 ){
+       //    $('#logo_image_text').addClass('static_main_heading_logo_top');
+       //    $('#logo_image_small').addClass('static_main_heading_logo_top');
+       //  }
+       // }
        if(index == 3 || index==4){
           $('#static_logo').addClass('static_heading_logo');
        }
+       if( index==3){
+         $('#logo_image_text').removeClass('static_heading_logo_text');
+         $('#logo_image_small').removeClass('static_heading_logo');
+       }
+
        if( index==5){
          $('#static_logo').removeClass('static_heading_logo');
        }
@@ -114,12 +128,22 @@ $(document).ready(function() {
    },
    onLeave: function(index, nextIndex, direction){
       var leavingSection = $(this);
-      console.log(index);
-      //after leaving section 2
+      if((index ==2 && direction =='down')){
+        $('#logo_image_text').removeClass('visible_transition');
+        $('#logo_image_text').addClass('animated fadeOutDown');
+        $('#logo_image_small').removeClass('visible_transition');
+        $('#logo_image_small').addClass('animated fadeOutDown');
+      }
+      if((index ==3 && direction =='up')){
+        $('#logo_image_text').addClasss('visible_transition');
+        $('#logo_image_text').removeClass('hidden_transition');
+        $('#logo_image_small').addClasss('visible_transition');
+        $('#logo_image_small').removeClass('hidden_transition');
+      }
      
       if((index ==4 && direction =='down')){
         $('#static_logo').removeClass('visible_transition');
-         $('#static_logo').addClass('hidden_transition');
+        $('#static_logo').addClass('hidden_transition');
       }
       if((index==3 && direction=='up')) {
         $('#static_logo').addClass('hidden_transition');
