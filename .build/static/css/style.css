@@ -785,10 +785,9 @@ p {
 .small_circle {
   list-style: none;
 }
-.small-carousel-indicators {
-  top:45%;
-  left:33%;
-  background:url('/static/images/static_circle.png');
+.static_circle {
+  top:150%;
+  left:25%;
   width:117px;
   height:117px;
   z-index:1;
@@ -797,17 +796,17 @@ p {
 .slide_icon_run_small {
   background: url('/static/images/running_sprite.png' ) no-repeat;
   width:102px;
-  top:8px;
-  left:8px;
+  top:45.5%;
+  left:34%;
   position:absolute;
   height:102px;
   background-position:0 100%;
 }
 .slide_icon_wave_small {
-  background: url('/static/images/wave_sprite.png' ) no-repeat;
+  background: url('/static/images/waves_sprite.png' ) no-repeat;
   width:102px;
-  top:8px;
-  left:8px;
+  top:45.5%;
+  left:34%;
   position:absolute;
   height:102px;
   background-position:0 100%;
@@ -815,8 +814,8 @@ p {
 .slide_icon_monitor_small {
   background: url('/static/images/monitor_sprite.png' ) no-repeat;
   width:102px;
-  top:8px;
-  left:8px;
+  top:45.5%;
+  left:34%;
   position:absolute;
   height:102px;
   background-position:0 100%;
@@ -824,8 +823,8 @@ p {
 .slide_icon_trophy_small {
   background: url('/static/images/trophy_sprite.png' ) no-repeat;
   width:102px;
-  top:8px;
-  left:8px;
+  top:45.5%;
+  left:34%;
   position:absolute;
   height:102px;
   background-position:0 100%;
@@ -833,11 +832,28 @@ p {
 .slide_icon_people_small {
   background: url('/static/images/people_sprite.png' ) no-repeat;
   width:102px;
-  top:8px;
-  left:8px;
+  top:45.5%;
+  left:34%;
   position:absolute;
   height:102px;
   background-position:0 100%;
 }
+.carousel_title {
+  text-align: center
+}
+
+.carousel_text {
+  display:block;
+  margin-left:-35px;
+  text-align: center;
+  line-height: 1.2 !important;
+}
+}
+.carousel-indicators {
+  bottom:0 !important;
+}
+
+.carousel-small {
+  height:100%;
 }
 

@@ -17,6 +17,78 @@ $(document).ready(function() {
            ctrl.trigger("click");
       },interval);
   });
+  if ( $(window).width() > 768) {     
+    $('.section_50').detach().appendTo('.fullpage');
+    $('.section_60').detach().appendTo('.fullpage');
+    $('.section_70').detach().appendTo('.fullpage');
+    $('.section_80').detach().appendTo('.fullpage');
+    $('.section_90').detach().appendTo('.fullpage');
+    $('.section_100').detach().appendTo('.fullpage');
+    $('.section_50').removeClass('hidden');
+    $('.section_60').removeClass('hidden');
+    $('.section_70').removeClass('hidden');
+    $('.section_80').removeClass('hidden');
+    $('.section_90').removeClass('hidden');
+    $('.section_55').detach().appendTo('.section_50');
+    $('.section_55').addClass('hidden');
+  }
+  else {
+    $('.section_55').detach().appendTo('.fullpage');
+    $('.section_100').detach().appendTo('.fullpage');
+    $('.section_55').removeClass('hidden');
+    $('.section_50').detach().appendTo('.section_100');
+    $('.section_60').detach().appendTo('.section_100');
+    $('.section_70').detach().appendTo('.section_100');
+    $('.section_80').detach().appendTo('.section_100');
+    $('.section_90').detach().appendTo('.section_100');
+    $('.section_100').detach().appendTo('.fullpage');
+    $('.section_50').addClass('hidden');
+    $('.section_60').addClass('hidden');
+    $('.section_70').addClass('hidden');
+    $('.section_80').addClass('hidden');
+    $('.section_90').addClass('hidden');
+  }
+
+  var doit;
+  function resizedw(){
+    if ( $(window).width() > 768) {     
+      $('.section_50').detach().appendTo('.fullpage');
+      $('.section_60').detach().appendTo('.fullpage');
+      $('.section_70').detach().appendTo('.fullpage');
+      $('.section_80').detach().appendTo('.fullpage');
+      $('.section_90').detach().appendTo('.fullpage');
+      $('.section_100').detach().appendTo('.fullpage');
+      $('.section_50').removeClass('hidden');
+      $('.section_60').removeClass('hidden');
+      $('.section_70').removeClass('hidden');
+      $('.section_80').removeClass('hidden');
+      $('.section_90').removeClass('hidden');
+      $('.section_55').detach().appendTo('.section_50');
+      $('.section_55').addClass('hidden');
+    }
+    else {
+      $('.section_55').detach().appendTo('.fullpage');
+      $('.section_100').detach().appendTo('.fullpage');
+      $('.section_55').removeClass('hidden');
+      $('.section_50').detach().appendTo('.section_100');
+      $('.section_60').detach().appendTo('.section_100');
+      $('.section_70').detach().appendTo('.section_100');
+      $('.section_80').detach().appendTo('.section_100');
+      $('.section_90').detach().appendTo('.section_100');
+      $('.section_50').addClass('hidden');
+      $('.section_60').addClass('hidden');
+      $('.section_70').addClass('hidden');
+      $('.section_80').addClass('hidden');
+      $('.section_90').addClass('hidden');
+    }
+  }
+  window.onresize = function() {
+      clearTimeout(doit);
+      doit = setTimeout(function() {
+          resizedw();
+      }, 100);
+  };
+
 
 
   $('.main-carousel-indicators div').mouseout(function(){
