@@ -2,6 +2,21 @@ $(document).ready(function() {
   $('.carousel').carousel({
     interval: 3000
   })
+  var myInterval=false;
+  $('.big-carousel-indicators div').mouseover(function() {
+      var ctrl = $(this);
+      var interval=200;
+
+      myInterval = setInterval(function(){
+           ctrl.trigger("click");
+      },interval);
+  });
+
+
+  $('.big-carousel-indicators div').mouseout(function(){
+      clearInterval(myInterval);
+       // myInterval = false;
+  });
   if ( $(window).width() > 768) {     
     $('.section_50').detach().appendTo('.fullpage');
     $('.section_60').detach().appendTo('.fullpage');
@@ -92,7 +107,7 @@ $(document).ready(function() {
        if( index==4){
          $('#static_logo').removeClass('static_heading_logo');
        }
-      if( index == 8 ) {
+      if( index == 9 ) {
         $('.awards' ).removeClass( 'hidden' );
         $('.awards' ).addClass( 'animated bounceInDown' );
       }
