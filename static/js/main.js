@@ -2,21 +2,6 @@ $(document).ready(function() {
   $('.carousel').carousel({
     interval: 3000
   })
-  $('.carousel-small').carousel({
-    interval: 3000
-  })
-  $('.carousel-main-small').carousel({
-    interval: 3000
-  })
-  var myInterval=false;
-  $('.main-carousel-indicators div').mouseover(function() {
-      var ctrl = $(this);
-      var interval=200;
-
-      myInterval = setInterval(function(){
-           ctrl.trigger("click");
-      },interval);
-  });
   if ( $(window).width() > 768) {     
     $('.section_50').detach().appendTo('.fullpage');
     $('.section_60').detach().appendTo('.fullpage');

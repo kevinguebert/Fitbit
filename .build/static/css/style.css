@@ -278,6 +278,31 @@ p {
 	background:#97cdcd;
 }
 
+.carousel_section_50 {
+  height:100%;
+  background:#477287;
+}
+
+.carousel_section_60 {
+  height:100%;
+  background:#18353b;
+}
+
+.carousel_section_70 {
+  height:100%;
+  background:#3497a0;
+}
+
+.carousel_section_80 {
+  height:100%;
+  background:#3bafb0;
+}
+
+.carousel_section_90 {
+  height:100%;
+  background:#97cdcd;
+}
+
 .slide_icons {
   background: url('/static/images/slide_30_slider_circles.png' ) no-repeat;
   width:710px !important;
@@ -700,47 +725,47 @@ p {
     height:100%;
   }
 
-  .section_50 h1 {
+  .carousel_section_50 h1 {
     font-size:1.8em !important;
     line-height: 1;
   }
 
-  .section_60 h1 {
+  .carousel_section_60 h1 {
     font-size:1.8em !important;
     line-height: 1;
   }
 
-  .section_70 h1 {
+  .carousel_section_70 h1 {
     font-size:1.8em !important;
     line-height: 1;
   }
 
-  .section_80 h1 {
+  .carousel_section_80 h1 {
     font-size:1.8em !important;
     line-height: 1;
   }
   
-  .section_90 h1 {
+  .carousel_section_90 h1 {
     font-size:1.8em !important;
     line-height: 1;
   }
 
-  .section_50 {
+  .carousel_section_50 {
     padding-top:25%;
     height:100%;
   }
 
-  .section_80 {
-    padding-top:25%;
+  .carousel_section_80 {
+    padding-top:65%;
     height:100%;
   }
 
-  .section_90 {
+  .carousel_section_90 {
     padding-top:35%;
     height:100%;
   }
 
-  .section_60, .section_70 {
+  .carousel_section_60, .section_70 {
     padding-top:12.5%;
     height:100%;
   }
@@ -751,6 +776,14 @@ p {
 
   .badges {
     width:33%;
+  }
+
+  .badge_smile {
+    top:3%;
+  }
+
+  .badge_shoe {
+    top:-3%;
   }
 
   .phones {
@@ -775,79 +808,226 @@ p {
   .meet_icons {
     margin-left:7px;
   }
-.carousel-main-small{
-  height:100%;
-}
-.main-small-carousel-inner {
-  height:100%;
-}
+  .carousel-main-small{
+    height:100%;
+  }
+  .main-small-carousel-inner {
+    height:100%;
+  }
 
-.small_circle {
-  list-style: none;
-}
-.static_circle {
-  top:150%;
-  left:25%;
-  width:117px;
-  height:117px;
-  z-index:1;
-  position:absolute;
-}
-.slide_icon_run_small {
-  background: url('/static/images/running_sprite.png' ) no-repeat;
-  width:102px;
-  top:45.5%;
-  left:34%;
-  position:absolute;
-  height:102px;
-  background-position:0 100%;
-}
-.slide_icon_wave_small {
-  background: url('/static/images/waves_sprite.png' ) no-repeat;
-  width:102px;
-  top:45.5%;
-  left:34%;
-  position:absolute;
-  height:102px;
-  background-position:0 100%;
-}
-.slide_icon_monitor_small {
-  background: url('/static/images/monitor_sprite.png' ) no-repeat;
-  width:102px;
-  top:45.5%;
-  left:34%;
-  position:absolute;
-  height:102px;
-  background-position:0 100%;
-}
-.slide_icon_trophy_small {
-  background: url('/static/images/trophy_sprite.png' ) no-repeat;
-  width:102px;
-  top:45.5%;
-  left:34%;
-  position:absolute;
-  height:102px;
-  background-position:0 100%;
-}
-.slide_icon_people_small {
-  background: url('/static/images/people_sprite.png' ) no-repeat;
-  width:102px;
-  top:45.5%;
-  left:34%;
-  position:absolute;
-  height:102px;
-  background-position:0 100%;
-}
-.carousel_title {
-  text-align: center
-}
+  .small_circle {
+    list-style: none;
+  }
+  .scale_1 {
+    display:none;
+  }
+  .static_circle {
+    top:-8px;
+    left:-8px;
+    width:117px;
+    height:117px;
+    z-index:1;
+    position:absolute;
+  }
+  .slide_icon_run_small {
+    background: url('/static/images/running_sprite.png' ) no-repeat;
+    width:102px;
+    top:45.5%;
+    left:34%;
+    position:absolute;
+    height:102px;
+    background-position:0 100%;
+  }
+  .slide_icon_wave_small {
+    background: url('/static/images/waves_sprite.png' ) no-repeat;
+    width:102px;
+    top:45.5%;
+    left:34%;
+    position:absolute;
+    height:102px;
+    background-position:0 100%;
+  }
+  .slide_icon_monitor_small {
+    background: url('/static/images/monitor_sprite.png' ) no-repeat;
+    width:102px;
+    top:45.5%;
+    left:34%;
+    position:absolute;
+    height:102px;
+    background-position:0 100%;
+  }
+  .slide_icon_trophy_small {
+    background: url('/static/images/trophy_sprite.png' ) no-repeat;
+    width:102px;
+    top:45.5%;
+    left:34%;
+    position:absolute;
+    height:102px;
+    background-position:0 100%;
+  }
+  .slide_icon_people_small {
+    background: url('/static/images/people_sprite.png' ) no-repeat;
+    width:102px;
+    top:45.5%;
+    left:34%;
+    position:absolute;
+    height:102px;
+    background-position:0 100%;
+  }
+  .carousel_title {
+    text-align: center
+  }
 
-.carousel_text {
-  display:block;
-  margin-left:-35px;
-  text-align: center;
-  line-height: 1.2 !important;
-}
+  .carousel_text {
+    display:block;
+    margin-left:-35px;
+    text-align: center;
+    line-height: 1.2 !important;
+  }
+  .awards {
+    position:absolute;
+  }
+
+  .awards img {
+    width:110%;
+  }
+
+  .awards {
+    top:0;
+  }
+  .award_banner {
+    width:50%;
+  }
+
+  .award_self {
+    background: url( '/static/images/white_line.png' ) repeat-y top center transparent;
+    height:25px;
+    top:12%;
+    width:50%;
+    left:-2%;
+  }
+
+  .award_banner_self {
+    margin-left:-6px;
+  }
+
+  .award_tech_crunch {
+    background: url( '/static/images/white_ling.png' ) repeat-y top center transparent;
+    width:50%;
+    height:150px;
+  }
+
+  .award_people {
+     background: url( '/static/images/white_ling.png' ) repeat-y top center transparent;
+    width:50%;
+     height:75px;
+  }
+
+  .award_wall_street {
+    background: url( '/static/images/white_line.png' ) repeat-y top center transparent;
+    width:50%;
+    height:10px;
+  }
+
+  .award_fast_company{
+    background: url( '/static/images/white_ling.png' ) repeat-y top center transparent;
+    width:50%;
+    height:166px;
+  }
+
+  .award_today {
+   background: url( '/static/images/white_ling.png' ) repeat-y top center transparent;
+    width:50%;
+   height:50px;
+  }
+
+  .award_vogue{
+   background: url( '/static/images/white_ling.png' ) repeat-y top center transparent;
+    width:50%;
+   height:105px;
+   margin-bottom:-7px;
+  }
+
+  .award_usa_today {
+   background: url( '/static/images/white_line.png' ) repeat-y top center transparent;
+   display:none;
+    width:50%;
+   height:50px;
+  }
+
+  .awards_tech_crunch { 
+    left:3%;
+  }
+
+  .awards_people {
+    left:22.5%;
+  }
+
+  .awards_wall_street {
+    left:42.5%;
+  }
+
+  .awards_fast_company {
+    left:56%;
+  }
+
+  .awards_today {
+    left:75%;
+  }
+
+  .awards_vogue {
+    left:90%;
+  }
+
+  .awards_usa_today {
+    display:none;
+    left:90%;
+  }
+
+  .watch_1 {
+    z-index:1;
+    top:12%;
+    left:3%;
+    width:45%;
+  }
+
+  .watch_3 {
+    top:75%;
+  }
+
+  .watch_2 {
+    width:15%;
+    left:37%;
+  }
+
+  .watch_4 {
+    top:18%;
+  }
+  .watch_5 {
+    left:65%;
+    width:20%;
+  }
+
+  .watch_6 {
+    top:68%;
+    width:47%;
+  }
+
+  .slide_40_0 {
+    top:33%;
+  }
+
+  .slide_100_0 {
+    margin-top:-100px;
+  }
+
+  .slide_100_0 .lead {
+    margin-top:20px;
+  }
+
+  .watches_subheading {
+    margin-top:15px;
+  }
 }
 .carousel-indicators {
   bottom:0 !important;
@@ -857,3 +1037,7 @@ p {
   height:100%;
 }
 
+
+.carousel {
+  height:100%;
+}
