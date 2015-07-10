@@ -1,4 +1,21 @@
 $(document).ready(function() {
+  $('.carousel').carousel({
+    interval: 3000
+  })
+  var myInterval=false;
+  $('.carousel-indicators div').mouseover(function() {
+      var ctrl = $(this);
+      var interval=200;
+
+      myInterval = setInterval(function(){
+           ctrl.trigger("click");
+      },interval);
+  });
+
+  $('.carousel-indicators div').mouseout(function(){
+      clearInterval(myInterval);
+       // myInterval = false;
+  });
   $('#fullpage').fullpage({ 
    scrollBar: true,
    afterLoad: function(anchorLink, index){
