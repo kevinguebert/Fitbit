@@ -94,16 +94,17 @@ $(document).ready(function() {
 
   var videoElement = video.get(0);
 
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    console.log('yaasdf');
+  }
   if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     videoElement.oncanplay = function() {
-      if ( $(window).width() > 768) {     
-        console.log('yes');
-        $('#fitbit-video').removeClass('hidden');
-        $('#fitbit_vid').removeClass('hidden');
-        $('#section_15').addClass('section_15');
-        $('#section_15').removeClass('section_15_background_image');
-        $('#section_10').removeClass('section_10_background_image');
-      }
+      console.log('yes');
+      $('#fitbit-video').removeClass('hidden');
+      $('#fitbit_vid').removeClass('hidden');
+      $('#section_15').addClass('section_15');
+      $('#section_15').removeClass('section_15_background_image');
+      $('#section_10').removeClass('section_10_background_image');
     };
   }
 
