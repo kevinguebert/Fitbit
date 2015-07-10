@@ -2,44 +2,56 @@
 {% block content %}
 
 <div id="fullpage" class="fullpage">
-	<video autoplay loop muted id="fitbit">
-	  <source src="/static/images/fitbit4.mp4" type="video/mp4">
+	<video autoplay loop muted id="fitbit" class="hidden">
+	  <source src="/static/images/fitbit4.mp4" data-src="/static/images/slide_10_background.jpeg" id='fitbit-video' class="hidden" type="video/mp4">
 	</video>
-	<div class="section section_10">
+	<div class="section section_10 section_10_background_image" id='section_10'>
 		{% include "slide_10.html" %}
+		<img class="animated infinite bounce down_arrow" src="/static/images/down_arrow.png" />
 	</div>
-	<div class="section section_15">
+	<div class="section section_15_background_image" id="section_15">
 		{% include "slide_15.html" %}
+		<img class="animated infinite bounce down_arrow" src="/static/images/down_arrow.png" />
 	</div>
 	<div class="section section_20">
 		{% include "slide_20.html" %}
+		<img class="animated infinite bounce down_arrow" src="/static/images/down_arrow.png" />
 	</div>
 	<div class="section">
 		{% include "slide_30.html" %}
+		<img class="animated infinite bounce down_arrow" src="/static/images/down_arrow.png" />
 	</div>
 	<div class="section section_40">
 		{% include "slide_40.html" %}
+		<img class="animated infinite bounce down_arrow" src="/static/images/down_arrow.png" />
 	</div>
 	<div class="section section_50" id='section_50'>
 		{% include "slide_50.html" %}
+		<img class="animated infinite bounce down_arrow" src="/static/images/down_arrow.png" />
 	</div>
 	<div class="section section_60" id='section_60'>
 		{% include "slide_60.html" %}
+		<img class="animated infinite bounce down_arrow" src="/static/images/down_arrow.png" />
 	</div>
 	<div class="section section_70" id='section_70'>
 		{% include "slide_70.html" %}
+		<img class="animated infinite bounce down_arrow" src="/static/images/down_arrow.png" />
 	</div>
 	<div class="section section_80" id='section_80'>
 		{% include "slide_80.html" %}
+		<img class="animated infinite bounce down_arrow" src="/static/images/down_arrow.png" />
 	</div>
 	<div class="section section_90" id='section_90'>
 		{% include "slide_90.html" %}
+		<img class="animated infinite bounce down_arrow" src="/static/images/down_arrow.png" />
 	</div>
 	<div class="section section_100">
 		{% include "slide_100.html" %}
+		<img class="animated infinite bounce down_arrow" src="/static/images/down_arrow.png" />
 	</div>
 	<div id="section_55" class="section section_55">
 		{% include "slide_55.html" %}
+		<img class="animated infinite bounce down_arrow" src="/static/images/down_arrow.png" />
 	</div>
 </div>
 

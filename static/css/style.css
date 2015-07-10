@@ -182,8 +182,11 @@ p {
   z-index:-1;
 }
 
+.section_10 {
+}
+
 .section_15_background_image {
-  background: url('/static/images/slide_10_background.jpeg') no-repeat center center; 
+  background: url('/static/images/slide_15_background_image.jpg') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -227,6 +230,7 @@ p {
 
 .logo_image {
   margin-right:15px;
+  margin-left:-30px;
 }
 .main-heading {
   font-size:7rem;
@@ -718,10 +722,10 @@ p {
   font-weight:700;
 }
 
-.carousel-indicators {
+.main-carousel-indicators {
   left:33% !important;
 }
-.carousel-indicators .active {
+.main-carousel-indicators .active {
   width:102px !important;
   height:102px !important;
   background-position: 0 100%;
@@ -733,7 +737,7 @@ p {
 }
 .main-carousel-indicators {
   top:37.5%;
-  z-index:3;
+  z-index:9;
 }
 .main-example-carousel-inner {
   height: 100%;
@@ -1087,6 +1091,10 @@ p {
   .watches_subheading {
     margin-top:15px;
   }
+  .static_main_heading_logo_top {
+    margin-top:0px !important;
+    padding-bottom:20px;
+  }
 }
 .carousel-indicators {
   bottom:0 !important;
@@ -1196,3 +1204,20 @@ p {
     object-fit: cover; /*cover video background */
     z-index: 0;
   }
+.down_arrow {
+  position:absolute;
+  left:50%;
+  bottom:5%;
+  -webkit-animation-duration: 3s !important;
+  animation-duration:3s !important;
+}
+
+.final_logo {
+  width:25%;
+}
+
+@media (min-width: 768px) and (max-width: 992px) { 
+  h1 {
+    font-size:2.5rem !important;
+  } 
+}

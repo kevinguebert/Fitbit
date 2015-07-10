@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $("#fitbit-video").unveil();
   $('.carousel').carousel({
     interval: 3000
   })
@@ -89,7 +90,18 @@ $(document).ready(function() {
       }, 100);
   };
 
+  var video = $('#fitbit-video');
 
+  var videoElement = video.get(0);
+
+  if (!videoElement.paused) {
+    console.log('yes');
+    $('#section_15').addClass('section_15');
+    $('.section_15').removeClass('section_15_background_image');
+    $('#section_10').removeClass('section_10_background_image');
+    $('#fitbit-video').removeClass('hidden');
+    $('#fitbit').removeClass('hidden');
+  } 
 
   $('.main-carousel-indicators div').mouseout(function(){
       clearInterval(myInterval);
@@ -100,22 +112,8 @@ $(document).ready(function() {
    scrollBar: true,
    afterLoad: function(anchorLink, index){
        var loadedSection = $(this);
-        //using index
-       // if( index ==1 || index ==2 )
-       // {
-       //  $('#logo_image_text').addClass('static_main_heading_logo_text');
-       //  $('#logo_image_small').addClass('static_main_heading_logo');
-       //  if( index == 2 ){
-       //    $('#logo_image_text').addClass('static_main_heading_logo_top');
-       //    $('#logo_image_small').addClass('static_main_heading_logo_top');
-       //  }
-       // }
        if(index == 3 || index==4){
           $('#static_logo').addClass('static_heading_logo');
-       }
-       if( index==3){
-         $('#logo_image_text').removeClass('static_heading_logo_text');
-         $('#logo_image_small').removeClass('static_heading_logo');
        }
 
        if( index==5){
@@ -128,18 +126,6 @@ $(document).ready(function() {
    },
    onLeave: function(index, nextIndex, direction){
       var leavingSection = $(this);
-      if((index ==2 && direction =='down')){
-        $('#logo_image_text').removeClass('visible_transition');
-        $('#logo_image_text').addClass('animated fadeOutDown');
-        $('#logo_image_small').removeClass('visible_transition');
-        $('#logo_image_small').addClass('animated fadeOutDown');
-      }
-      if((index ==3 && direction =='up')){
-        $('#logo_image_text').addClasss('visible_transition');
-        $('#logo_image_text').removeClass('hidden_transition');
-        $('#logo_image_small').addClasss('visible_transition');
-        $('#logo_image_small').removeClass('hidden_transition');
-      }
      
       if((index ==4 && direction =='down')){
         $('#static_logo').removeClass('visible_transition');
