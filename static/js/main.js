@@ -101,13 +101,13 @@ $(document).ready(function() {
    afterLoad: function(anchorLink, index){
        var loadedSection = $(this);
         //using index
-       if(index == 2 || index==3){
+       if(index == 3 || index==4){
           $('#static_logo').addClass('static_heading_logo');
        }
-       if( index==4){
+       if( index==5){
          $('#static_logo').removeClass('static_heading_logo');
        }
-      if( index == 9 ) {
+      if( index == 10 ) {
         $('.awards' ).removeClass( 'hidden' );
         $('.awards' ).addClass( 'animated bounceInDown' );
       }
@@ -117,15 +117,15 @@ $(document).ready(function() {
       console.log(index);
       //after leaving section 2
      
-      if((index ==3 && direction =='down')){
+      if((index ==4 && direction =='down')){
         $('#static_logo').removeClass('visible_transition');
          $('#static_logo').addClass('hidden_transition');
       }
-      if((index==2 && direction=='up')) {
+      if((index==3 && direction=='up')) {
         $('#static_logo').addClass('hidden_transition');
         $( '#static_logo').removeClass('static_heading_logo');
       }
-      if( index == 4 && direction =='up' ) {
+      if( index == 5 && direction =='up' ) {
       //  $('#static_logo').removeClass('hidden_transition');
         $('#static_logo').addClass('visible_transition');
       }
