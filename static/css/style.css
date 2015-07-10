@@ -750,6 +750,9 @@ p {
 }
 
 @media (max-width: 768px) {
+  video {
+    display:none;
+  }
   .main-heading {
     margin-top:10px;
     font-size:3em;
