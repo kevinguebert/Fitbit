@@ -90,18 +90,19 @@ $(document).ready(function() {
       }, 100);
   };
 
-  var video = $('#fitbit-video');
+  var video = $('#fitbit_vid');
 
   var videoElement = video.get(0);
 
-  if (!videoElement.paused) {
+  console.log(video.readyState);
+  videoElement.oncanplay = function() {
     console.log('yes');
-    $('#section_15').addClass('section_15');
-    $('.section_15').removeClass('section_15_background_image');
-    $('#section_10').removeClass('section_10_background_image');
     $('#fitbit-video').removeClass('hidden');
-    $('#fitbit').removeClass('hidden');
-  } 
+    $('#fitbit_vid').removeClass('hidden');
+    $('#section_15').addClass('section_15');
+    $('#section_15').removeClass('section_15_background_image');
+    $('#section_10').removeClass('section_10_background_image');
+  };
 
   $('.main-carousel-indicators div').mouseout(function(){
       clearInterval(myInterval);
