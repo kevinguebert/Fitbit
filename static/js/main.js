@@ -1,9 +1,9 @@
 $(document).ready(function() {
-  $('.carousel').carousel({
+  $('.main-carousel').carousel({
     interval: 3000
   })
   var myInterval=false;
-  $('.carousel-indicators div').mouseover(function() {
+  $('.main-carousel-indicators div').mouseover(function() {
       var ctrl = $(this);
       var interval=200;
 
@@ -12,7 +12,7 @@ $(document).ready(function() {
       },interval);
   });
 
-  $('.carousel-indicators div').mouseout(function(){
+  $('.main-carousel-indicators div').mouseout(function(){
       clearInterval(myInterval);
        // myInterval = false;
   });

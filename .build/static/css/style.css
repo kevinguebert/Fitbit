@@ -231,6 +231,10 @@ p {
   margin-bottom:20px;
 }
 
+.black_logo {
+  max-width:217px;
+}
+
 .first_heading_logo { 
   display:none;
   margin-bottom:20px;
@@ -277,7 +281,9 @@ p {
 .slide_icons {
   background: url('/static/images/slide_30_slider_circles.png' ) no-repeat;
   width:710px !important;
-  height:100%;
+  height:117px;
+  top:300px !important;
+  margin-left:-10px;
   position:absolute;
 }
 
@@ -438,6 +444,8 @@ p {
 
 .shoes {
   width:30%;
+  display:inline-block !important;
+  margin:0 13px;
 }
 
 .shoe_left {
@@ -589,29 +597,29 @@ p {
   width:100%;
 }
 #tech_crunch {
-  -webkit-animation-delay: 0.15s;
+  -webkit-animation-delay: 0.05s;
 }
 #people{
-  -webkit-animation-delay: 0.25s;
+  -webkit-animation-delay: 0.15s;
 }
 #wall_street{
-  -webkit-animation-delay: 0.35s;
+  -webkit-animation-delay: 0.25s;
 }
 #fast_company{
-  -webkit-animation-delay: 0.45s;
+  -webkit-animation-delay: 0.35s;
 }
 #today{
-  -webkit-animation-delay: 0.55s;
+  -webkit-animation-delay: 0.45s;
 }
 #vogue{
-  -webkit-animation-delay: 0.65s;
+  -webkit-animation-delay: 0.55s;
 }
 #usa_today{
-  -webkit-animation-delay: 0.75s;
+  -webkit-animation-delay: 0.65s;
 }
 
 .accolades_row {
-  margin-top:40%;
+  margin-top:25%;
 }
 
 .carousel_text {
@@ -651,3 +659,36 @@ p {
   height:100%;
   overflow:visible !important;
 }
+
+@media (max-width: 768px) {
+  .main-heading {
+    font-size:3em;
+    line-height: 1;
+  }
+
+  .slide_content {
+    margin-top:0;
+  }
+
+  .absolute_slide {
+    top:0;
+  }
+  .absolute_heading {
+    margin-bottom:20px;
+  }
+
+  .lead {
+    font-size:1.6rem !important;
+  }
+
+  .slide_20_lead {
+    margin-top:20px;
+  }
+  .watches {
+    width:33%;
+  }
+  .slide_20_icons {
+    width:400%;
+  }
+}
+
