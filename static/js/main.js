@@ -120,6 +120,7 @@ $(document).ready(function() {
          $('#static_logo').removeClass('static_heading_logo');
        }
       if( index == 10 ) {
+        $('.accolades' ).removeClass('hidden');
         $('.awards' ).removeClass( 'hidden' );
         $('.awards' ).addClass( 'animated bounceInDown' );
       }
