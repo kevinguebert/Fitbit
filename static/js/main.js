@@ -1,5 +1,8 @@
 $(document).ready(function() {
-  $('.main-carousel').carousel({
+  $('.carousel').carousel({
+    interval: 3000
+  })
+  $('.carousel-small').carousel({
     interval: 3000
   })
   var myInterval=false;

@@ -628,7 +628,7 @@ p {
   width:175%;
 }
 
-.carousel-control.right {
+.arousel-control.right {
   background-image:none !important;
 }
 .carousel-control.left {
@@ -641,20 +641,20 @@ p {
   font-weight:700;
 }
 
-.carousel-indicators .active {
+.main-carousel-indicators .active {
   width:102px !important;
   height:102px !important;
   background-position: 0 100%;
   background-color: transparent !important;
 }
 
-.carousel-indicators .active .carousel_text {
+.main-carousel-indicators .active .carousel_text {
   display:block;
 }
-.carousel-indicators {
+.main-carousel-indicators {
   top:37.5%;
 }
-.carousel-inner {
+.main-carousel-inner {
   width:100% !important;
   height:100%;
   overflow:visible !important;
@@ -662,6 +662,7 @@ p {
 
 @media (max-width: 768px) {
   .main-heading {
+    margin-top:10px;
     font-size:3em;
     line-height: 1;
   }
@@ -688,7 +689,91 @@ p {
     width:33%;
   }
   .slide_20_icons {
-    width:400%;
+    width:150%;
+  }
+
+  .shoes {
+    width:25%;
+  }
+
+  .carousel-inner {
+    height:100%;
+  }
+
+  .section_50 h1 {
+    font-size:1.8em !important;
+    line-height: 1;
+  }
+
+  .section_60 h1 {
+    font-size:1.8em !important;
+    line-height: 1;
+  }
+
+  .section_70 h1 {
+    font-size:1.8em !important;
+    line-height: 1;
+  }
+
+  .section_80 h1 {
+    font-size:1.8em !important;
+    line-height: 1;
+  }
+  
+  .section_90 h1 {
+    font-size:1.8em !important;
+    line-height: 1;
+  }
+
+  .section_50 {
+    padding-top:25%;
+    height:100%;
+  }
+
+  .section_80 {
+    padding-top:25%;
+    height:100%;
+  }
+
+  .section_90 {
+    padding-top:35%;
+    height:100%;
+  }
+
+  .section_60, .section_70 {
+    padding-top:12.5%;
+    height:100%;
+  }
+
+  .accolades_row {
+    margin-top:0;
+  }
+
+  .badges {
+    width:33%;
+  }
+
+  .phones {
+    width:100%;
+  }
+  .heading_logo {
+    width:115px;
+    margin-bottom:0;
+  }
+
+  .logo_image {
+    width:28px;
+    margin-right:0;
+  }
+
+  .product_logo {
+    width:100%;
+  }
+  .manifesto {
+    margin-top:100px;
+  }
+  .meet_icons {
+    margin-left:7px;
   }
 }
 
