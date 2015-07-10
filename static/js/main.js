@@ -96,12 +96,14 @@ $(document).ready(function() {
 
   if( supportType(video,'video/mp4', "avc1.4D401E, mp4a.40.2") != false ) {
     videoElement.oncanplay = function() {
-      console.log('yes');
-      $('#fitbit-video').removeClass('hidden');
-      $('#fitbit_vid').removeClass('hidden');
-      $('#section_15').addClass('section_15');
-      $('#section_15').removeClass('section_15_background_image');
-      $('#section_10').removeClass('section_10_background_image');
+      if ( $(window).width() > 768) {     
+        console.log('yes');
+        $('#fitbit-video').removeClass('hidden');
+        $('#fitbit_vid').removeClass('hidden');
+        $('#section_15').addClass('section_15');
+        $('#section_15').removeClass('section_15_background_image');
+        $('#section_10').removeClass('section_10_background_image');
+      }
     };
   }
   function supportType(e,vidType,codType) { 
