@@ -90,17 +90,26 @@ $(document).ready(function() {
       }, 100);
   };
 
-  var video = $('#fitbit-video');
+  var video = $('#fitbit_vid');
 
   var videoElement = video.get(0);
 
-  if (!videoElement.paused) {
-    console.log('yes');
-    $('#section_15').addClass('section_15');
-    $('.section_15').removeClass('section_15_background_image');
-    $('#section_10').removeClass('section_10_background_image');
-    $('#fitbit-video').removeClass('hidden');
-    $('#fitbit').removeClass('hidden');
+  if( supportType(video,'video/mp4', "avc1.4D401E, mp4a.40.2") != false ) {
+    videoElement.oncanplay = function() {
+      console.log('yes');
+      $('#fitbit-video').removeClass('hidden');
+      $('#fitbit_vid').removeClass('hidden');
+      $('#section_15').addClass('section_15');
+      $('#section_15').removeClass('section_15_background_image');
+      $('#section_10').removeClass('section_10_background_image');
+    };
+  }
+  function supportType(e,vidType,codType) { 
+    var vid = document.createElement('video');
+    isSupp = vid.canPlayType(vidType+';codecs="'+codType+'"');
+    if (isSupp == "") {
+        isSupp = false;
+    }
   } 
 
   $('.main-carousel-indicators div').mouseout(function(){
