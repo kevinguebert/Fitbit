@@ -751,7 +751,7 @@ p {
 
 @media (max-width: 768px) {
   video {
-    display:none;
+    display:none !important;
   }
   .main-heading {
     margin-top:10px;

@@ -94,7 +94,7 @@ $(document).ready(function() {
 
   var videoElement = video.get(0);
 
-  if( supportType(video,'video/mp4', "avc1.4D401E, mp4a.40.2") != false ) {
+  if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     videoElement.oncanplay = function() {
       if ( $(window).width() > 768) {     
         console.log('yes');
@@ -106,13 +106,6 @@ $(document).ready(function() {
       }
     };
   }
-  function supportType(e,vidType,codType) { 
-    var vid = document.createElement('video');
-    isSupp = vid.canPlayType(vidType+';codecs="'+codType+'"');
-    if (isSupp == "") {
-        isSupp = false;
-    }
-  } 
 
   $('.main-carousel-indicators div').mouseout(function(){
       clearInterval(myInterval);
