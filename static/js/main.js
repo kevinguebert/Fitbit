@@ -5,6 +5,9 @@ $(document).ready(function() {
   $('.carousel-small').carousel({
     interval: 3000
   })
+  $('.carousel-main-small').carousel({
+    interval: 3000
+  })
   var myInterval=false;
   $('.main-carousel-indicators div').mouseover(function() {
       var ctrl = $(this);
@@ -15,11 +18,13 @@ $(document).ready(function() {
       },interval);
   });
 
+
   $('.main-carousel-indicators div').mouseout(function(){
       clearInterval(myInterval);
        // myInterval = false;
   });
   $('#fullpage').fullpage({ 
+   slideSelector: '.slideshow',
    scrollBar: true,
    afterLoad: function(anchorLink, index){
        var loadedSection = $(this);
