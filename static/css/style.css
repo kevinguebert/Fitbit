@@ -2,9 +2,6 @@
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0} 
 *, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-a:hover, a:focus {
-  color:#fff !important;
-}
 /* Clearfix */
 .clearfix:after {
 	content: "";
@@ -177,19 +174,19 @@ p {
 }
 
 .section_10_background_image {
-  background: url('../images/slide_10_background.jpeg') no-repeat center center; 
+  background: url('/static/images/slide_10_background.jpeg') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  z-index:-1;
+  z-index:3;
 }
 
 .section_10 {
 }
 
 .section_15_background_image {
-  background: url('../images/slide_15_background_image.jpg') no-repeat center center; 
+  background: url('/static/images/slide_15_background_image.jpg') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -207,7 +204,7 @@ p {
 }
 
 .section_20 {
-  background: url('../images/slide_20_background.jpeg') no-repeat center center; 
+  background: url('/static/images/slide_20_background.jpeg') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -283,7 +280,7 @@ p {
 .static_heading_logo {
   display:block;
   position:fixed;
-  top:25%;
+  top:29%;
   left:50%;
   margin-top:-35px;
   margin-left:-115px;
@@ -363,7 +360,7 @@ p {
 }
 
 .slide_icons {
-  background: url('../images/slide_30_slider_circles.png' ) no-repeat;
+  background: url('/static/images/slide_30_slider_circles.png' ) no-repeat;
   width:710px !important;
   height:117px;
   top:300px !important;
@@ -372,7 +369,7 @@ p {
 }
 
 .slide_icon_run {
-  background: url('../images/running_sprite.png' ) no-repeat;
+  background: url('/static/images/running_sprite.png' ) no-repeat;
   width:102px;
   top:8px;
   left:8px;
@@ -386,7 +383,7 @@ p {
 }
 
 .slide_icon_monitor{
-  background: url('../images/monitor_sprite.png' ) no-repeat 0 0;
+  background: url('/static/images/monitor_sprite.png' ) no-repeat 0 0;
   width:102px;
   height:102px;
   top:8px;
@@ -394,7 +391,7 @@ p {
   position:absolute;
 }
 .slide_icon_trophy {
-  background: url('../images/trophy_sprite.png' ) no-repeat 0 0;
+  background: url('/static/images/trophy_sprite.png' ) no-repeat 0 0;
   width:102px;
   height:102px;
   top:8px;
@@ -402,7 +399,7 @@ p {
   position:absolute;
 }
 .slide_icon_people {
-  background: url('../images/people_sprite.png' ) no-repeat 0 0;
+  background: url('/static/images/people_sprite.png' ) no-repeat 0 0;
   width:102px;
   height:102px;
   top:8px;
@@ -427,7 +424,7 @@ p {
 }
 
 .slide_icon_wave {
-  background: url('../images/waves_sprite.png' ) no-repeat 0 0;
+  background: url('/static/images/waves_sprite.png' ) no-repeat 0 0;
   width:102px;
   height:102px;
   top:8px;
@@ -438,7 +435,7 @@ p {
 .slide_30_10 {
   width:100%;
   height:100%;
-  background: url('../images/slide_30_10.jpg') no-repeat center center; 
+  background: url('/static/images/slide_30_10.jpg') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -447,7 +444,7 @@ p {
 .slide_30_20 {
   width:100%;
   height:100%;
-  background: url('../images/slide_30_20.jpg') no-repeat center center; 
+  background: url('/static/images/slide_30_20.jpg') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -456,7 +453,7 @@ p {
 .slide_30_30 {
   width:100%;
   height:100%;
-  background: url('../images/slide_30_30.jpg') no-repeat center center; 
+  background: url('/static/images/slide_30_30.jpg') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -465,7 +462,7 @@ p {
 .slide_30_40 {
   width:100%;
   height:100%;
-  background: url('../images/slide_30_40.jpg') no-repeat center center; 
+  background: url('/static/images/slide_30_40.jpg') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -474,7 +471,7 @@ p {
 .slide_30_50 {
   width:100%;
   height:100%;
-  background: url('../images/slide_30_50.jpg') no-repeat center center; 
+  background: url('/static/images/slide_30_50.jpg') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -562,7 +559,7 @@ p {
 }
 
 .award_self {
-  background: url( '../images/white_line.png' ) repeat-y top center transparent;
+  background: url( '/static/images/white_line.png' ) repeat-y top center transparent;
   height:200px;
   top:12%;
   left:-2%;
@@ -573,37 +570,37 @@ p {
 }
 
 .award_tech_crunch {
-  background: url( '../images/white_ling.png' ) repeat-y top center transparent;
-  height:350px;
+  background: url( '/static/images/white_ling.png' ) repeat-y top center transparent;
+  height:300px;
 }
 
 .award_people {
-   background: url( '../images/white_ling.png' ) repeat-y top center transparent;
-   height:200px;
+   background: url( '/static/images/white_ling.png' ) repeat-y top center transparent;
+   height:175px;
 }
 
 .award_wall_street {
-  background: url( '../images/white_line.png' ) repeat-y top center transparent;
+  background: url( '/static/images/white_line.png' ) repeat-y top center transparent;
   height:100px;
 }
 
 .award_fast_company{
-  background: url( '../images/white_ling.png' ) repeat-y top center transparent;
-  height:300px;
+  background: url( '/static/images/white_ling.png' ) repeat-y top center transparent;
+  height:275px;
 }
 
 .award_today {
- background: url( '../images/white_ling.png' ) repeat-y top center transparent;
+ background: url( '/static/images/white_ling.png' ) repeat-y top center transparent;
  height:150px;
 }
 
 .award_vogue{
- background: url( '../images/white_ling.png' ) repeat-y top center transparent;
+ background: url( '/static/images/white_ling.png' ) repeat-y top center transparent;
  height:275px;
 }
 
 .award_usa_today {
- background: url( '../images/white_line.png' ) repeat-y top center transparent;
+ background: url( '/static/images/white_line.png' ) repeat-y top center transparent;
  height:150px;
 }
 
@@ -685,6 +682,7 @@ p {
   -webkit-animation-delay: 0.05s;
 }
 #people{
+  z-index:2;
   -webkit-animation-delay: 0.15s;
 }
 #wall_street{
@@ -900,7 +898,7 @@ p {
     position:absolute;
   }
   .slide_icon_run_small {
-    background: url('../images/running_sprite.png' ) no-repeat;
+    background: url('/static/images/running_sprite.png' ) no-repeat;
     width:102px;
     top:45.5%;
     left:34%;
@@ -909,7 +907,7 @@ p {
     background-position:0 100%;
   }
   .slide_icon_wave_small {
-    background: url('../images/waves_sprite.png' ) no-repeat;
+    background: url('/static/images/waves_sprite.png' ) no-repeat;
     width:102px;
     top:45.5%;
     left:34%;
@@ -918,7 +916,7 @@ p {
     background-position:0 100%;
   }
   .slide_icon_monitor_small {
-    background: url('../images/monitor_sprite.png' ) no-repeat;
+    background: url('/static/images/monitor_sprite.png' ) no-repeat;
     width:102px;
     top:45.5%;
     left:34%;
@@ -927,7 +925,7 @@ p {
     background-position:0 100%;
   }
   .slide_icon_trophy_small {
-    background: url('../images/trophy_sprite.png' ) no-repeat;
+    background: url('/static/images/trophy_sprite.png' ) no-repeat;
     width:102px;
     top:45.5%;
     left:34%;
@@ -936,7 +934,7 @@ p {
     background-position:0 100%;
   }
   .slide_icon_people_small {
-    background: url('../images/people_sprite.png' ) no-repeat;
+    background: url('/static/images/people_sprite.png' ) no-repeat;
     width:102px;
     top:45.5%;
     left:34%;
@@ -973,7 +971,7 @@ p {
   }
 
   .award_self {
-    background: url( '../images/white_line.png' ) repeat-y top center transparent;
+    background: url( '/static/images/white_line.png' ) repeat-y top center transparent;
     height:25px;
     top:12%;
     width:50%;
@@ -985,44 +983,44 @@ p {
   }
 
   .award_tech_crunch {
-    background: url( '../images/white_ling.png' ) repeat-y top center transparent;
+    background: url( '/static/images/white_ling.png' ) repeat-y top center transparent;
     width:50%;
     height:150px;
   }
 
   .award_people {
-     background: url( '../images/white_ling.png' ) repeat-y top center transparent;
+     background: url( '/static/images/white_ling.png' ) repeat-y top center transparent;
     width:50%;
      height:75px;
   }
 
   .award_wall_street {
-    background: url( '../images/white_line.png' ) repeat-y top center transparent;
+    background: url( '/static/images/white_line.png' ) repeat-y top center transparent;
     width:50%;
     height:10px;
   }
 
   .award_fast_company{
-    background: url( '../images/white_ling.png' ) repeat-y top center transparent;
+    background: url( '/static/images/white_ling.png' ) repeat-y top center transparent;
     width:50%;
     height:166px;
   }
 
   .award_today {
-   background: url( '../images/white_ling.png' ) repeat-y top center transparent;
+   background: url( '/static/images/white_ling.png' ) repeat-y top center transparent;
     width:50%;
    height:50px;
   }
 
   .award_vogue{
-   background: url( '../images/white_ling.png' ) repeat-y top center transparent;
+   background: url( '/static/images/white_ling.png' ) repeat-y top center transparent;
     width:50%;
    height:105px;
    margin-bottom:-7px;
   }
 
   .award_usa_today {
-   background: url( '../images/white_line.png' ) repeat-y top center transparent;
+   background: url( '/static/images/white_line.png' ) repeat-y top center transparent;
    display:none;
     width:50%;
    height:50px;
@@ -1208,7 +1206,7 @@ p {
     height: 100%;
     background:black;
     background-size: 100% 100%;
-    /*background-image: url('../images/fitbit4.mp4');*/
+    /*background-image: url('/static/images/fitbit4.mp4');*/
     background-position: center center;
     background-size: contain;
     object-fit: cover; /*cover video background */
@@ -1234,4 +1232,13 @@ p {
   h1 {
     font-size:2.5rem !important;
   } 
+}
+
+.contact {
+  position:fixed;
+  font-weight:bolder !important;
+  font-size:16px !important;
+  bottom:0;
+  right:0;
+  z-index:10;
 }
