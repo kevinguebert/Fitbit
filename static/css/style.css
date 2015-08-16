@@ -179,7 +179,7 @@ p {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  z-index:-1;
+  z-index:3;
 }
 
 .section_10 {
@@ -280,7 +280,7 @@ p {
 .static_heading_logo {
   display:block;
   position:fixed;
-  top:25%;
+  top:29%;
   left:50%;
   margin-top:-35px;
   margin-left:-115px;
@@ -571,12 +571,12 @@ p {
 
 .award_tech_crunch {
   background: url( '/static/images/white_ling.png' ) repeat-y top center transparent;
-  height:350px;
+  height:300px;
 }
 
 .award_people {
    background: url( '/static/images/white_ling.png' ) repeat-y top center transparent;
-   height:200px;
+   height:175px;
 }
 
 .award_wall_street {
@@ -586,7 +586,7 @@ p {
 
 .award_fast_company{
   background: url( '/static/images/white_ling.png' ) repeat-y top center transparent;
-  height:300px;
+  height:275px;
 }
 
 .award_today {
@@ -682,6 +682,7 @@ p {
   -webkit-animation-delay: 0.05s;
 }
 #people{
+  z-index:2;
   -webkit-animation-delay: 0.15s;
 }
 #wall_street{
@@ -1231,4 +1232,13 @@ p {
   h1 {
     font-size:2.5rem !important;
   } 
+}
+
+.contact {
+  position:fixed;
+  font-weight:bolder !important;
+  font-size:16px !important;
+  bottom:0;
+  right:0;
+  z-index:10;
 }
